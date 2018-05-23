@@ -1,0 +1,74 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/TableLayout01"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    
+    android:stretchColumns="2" 
+      android:layout_margin="10dp" >
+
+    <TableRow>
+
+        <TextView
+          
+             android:textSize="@dimen/label_font_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+              android:text="标题:   " />
+        
+        
+        
+        
+        
+
+        <EditText
+            android:id="@+id/title"
+            
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:ems="10" >
+
+            <requestFocus />
+        </EditText>
+
+    </TableRow>
+
+ 
+
+        <TextView
+          android:text="内容:   "
+             android:textSize="@dimen/label_font_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+       />
+
+        <EditText
+           
+            android:id="@+id/content"
+         
+            android:layout_height="200px"
+          
+           
+            android:ems="10"
+            android:inputType="textMultiLine"
+           android:radius="5dip"
+            />
+      
+ 
+
+
+ <Button
+            android:id="@+id/add"  
+ 
+        
+            android:background="@drawable/button"  
+             
+            android:text="添加"  
+            android:textColor="#fff"  
+            android:textSize="18sp"
+            android:layout_margin="10dp" 
+            
+             />
+
+
+
+</TableLayout>
